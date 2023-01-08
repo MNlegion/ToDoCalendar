@@ -4,38 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To Do Calendar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>ToDo Calendar</title>
   </head>
-
   <body>
-    <main class="app">
-      <section class="greeting">
-        <h2 class="title">
-          How are you today,
-          <input type="text" id="name" placeholder="Your Name Here" />?
-        </h2>
+    <main>
+      <section class="welcome">
+        <div>
+          <h2>How are you doing today, <input type="text" />?</h2>
+        </div>
       </section>
 
-      <section class="create-todo">
-        <h3>CREATE A TO DO</h3>
-        <form id="new-todo-form">
-          <h4>My To Do List</h4>
-          <input
-            type="text"
-            name="content"
-            id="content"
-            placeholder="e.g. Pick up milk."
-          />
-        </form>
-      </section>
+      <div>
+        <section>
+          <h2>Create A To Do</h2>
+          <h3>What's on your To Do?</h3>
+          <input type="text" />
+        </section>
+
+        <section>
+          <h2>Pick a Category</h2>
+          <input type="button" value="Business" />
+          <input type="button" value="Personal" />
+          <input type="button" value="Friends/Family" />
+        </section>
+      </div>
+
+      <script src="./assets/js/main.js"></script>
     </main>
-    <script src="./assets/js/main.js"></script>
   </body>
 </html>
